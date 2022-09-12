@@ -23,7 +23,7 @@ Klassene `TabellerEnhetsTester.java` og `MatriserEnhetstester.java` inneholder J
 
 Den ferdige Java-koden må legges opp (push) på github og en URL til oppbevaringsplassen må leveres i Canvas.
 
-Husk å levere som gruppe. Se instruksjoner på Canvas for hvordan dere leverer som gruppe.
+**VIKTIG** Husk å levere som gruppe. Se instruksjoner på Canvas for hvordan dere leverer som gruppe.
 
 ### Tilgang til koden for andre i gruppen
 

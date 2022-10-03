@@ -3,48 +3,60 @@ package no.hvl.dat100.lab6.matriser;
 public class Matriser {
 
 	// a)
-	public static void skrivUt(int[][] matrise) {
-		
-		// TODO
-		throw new UnsupportedOperationException("skrivUt ikke implementert");
+
+	public static void skrivUtv1(int[][] matrise) {
+
+		for (int rad = 0; rad < matrise.length; rad++) {
+			for (int kol = 0; kol < matrise[rad].length; kol++) {
+				System.out.print(matrise[rad][kol] + " ");
+			}
+			System.out.println();
+
+		}
+		System.out.println();
 	}
 
 	// b)
 	public static String tilStreng(int[][] matrise) {
 
-		// TODO
-		throw new UnsupportedOperationException("tilStreng ikke implementert");
-		
+		String returVerdi = "";
+
+		for (int rad = 0; rad < matrise.length; rad++) {
+			for (int kol = 0; kol < matrise[rad].length; kol++) {
+				returVerdi = returVerdi + matrise[rad][kol] + " ";
+			}
+			returVerdi = returVerdi + "\n";
+
+		}
+		return returVerdi;
 	}
 
 	// c)
 	public static int[][] skaler(int tall, int[][] matrise) {
-		
-		// TODO
-		throw new UnsupportedOperationException("skaler ikke implementert");
-	
-	}
 
+		int[][] matrise2 = new int[matrise.length][matrise[0].length];
+		for (int rad = 0; rad < matrise.length; rad++) {
+			for (int kol = 0; kol < matrise[rad].length; kol++) {
+
+				matrise2[rad][kol] = matrise[rad][kol] * tall;
+			}
+		}
+		return matrise2;
+	}
+	
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
 
-		// TODO
-		throw new UnsupportedOperationException("erLik ikke implementert");
-	}
-	
-	// e)
-	public static int[][] speile(int[][] matrise) {
+		boolean returVerdi = a.length == b.length;
+		if (returVerdi) {
+			for (int rad = 0; rad < a.length && returVerdi; rad++) {
+				returVerdi = a[rad].length == b[rad].length;
+				for (int kol = 0; kol < a[rad].length && returVerdi; kol++) {
+					returVerdi = a[rad][kol] == b[rad][kol];
 
-		// TODO
-		throw new UnsupportedOperationException("speile ikke implementert");
-	
-	}
+				}
+			}
 
-	// f)
-	public static int[][] multipliser(int[][] a, int[][] b) {
-
-		// TODO
-		throw new UnsupportedOperationException("multipliser ikke implementert");
-	
+		}
+		return returVerdi;
 	}
-}

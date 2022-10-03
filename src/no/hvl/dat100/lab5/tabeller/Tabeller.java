@@ -1,7 +1,5 @@
 package no.hvl.dat100.lab5.tabeller;
 
-import no.hvl.dat100.lab5.*;
-import no.hvl.dat100.lab5.tabeller.*;
 
 public class Tabeller {
 	// a)

@@ -60,3 +60,4 @@ public class Matriser {
 		}
 		return returVerdi;
 	}
+}
